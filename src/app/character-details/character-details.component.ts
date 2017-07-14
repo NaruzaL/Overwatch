@@ -12,8 +12,8 @@ import { CharacterService } from '../character.service';
 })
 
 export class CharacterDetailsComponent implements OnInit {
-  characterId: number = null;
-  characterToDisplay: Character;
+  characterId: string;
+  characterToDisplay;
 
   constructor(private route: ActivatedRoute,
     private location: Location,
@@ -21,9 +21,9 @@ export class CharacterDetailsComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.route.params.forEach((urlParameters) => {
-  this.characterId = parseInt(urlParameters['id']);
-    });
+      this.route.params.forEach((urlParameters) => {
+      this.characterId = urlParameters['id'];
+      });
     this.characterToDisplay = this.characterService.getCharacterById(this.characterId);
   }
 
