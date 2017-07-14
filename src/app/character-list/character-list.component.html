@@ -1,10 +1,13 @@
-<div *ngFor="let character of characters | async">
-  <div [class]="getRole(character)">
-    <h3 (click)="seeCharDetail(character)"><strong>{{character.name}}</strong></h3>
-    <div *ngIf="currentRoute === '/admin'">
-      {{character.role}}{{character.bio}}
-      <hr>
-      <app-edit-character [selectedCharacter]="character"></app-edit-character>
+<div id="charList">
+  <div *ngFor="let character of characters | async">
+    <div [class]="getRole(character)">
+      <h3 (click)="seeCharDetail(character)"><strong>{{character.name}}</strong></h3>
+      <div *ngIf="currentRoute === '/admin'">
+        <h5>Role: {{character.role}} </h5>
+        <h5>Saying: "{{character.bio}}"</h5>
+        <hr>
+        <app-edit-character [selectedCharacter]="character"></app-edit-character>
+      </div>
     </div>
   </div>
 </div>

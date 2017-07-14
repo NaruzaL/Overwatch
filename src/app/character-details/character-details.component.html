@@ -1,5 +1,5 @@
-<div>
+<div id = "charPage">
   <h2>{{(characterToDisplay | async)?.name}}</h2>
-  <h4>{{(characterToDisplay | async)?.role}}</h4>
-  <p>{{(characterToDisplay | async)?.bio}}</p>
+  <h4>Role: {{(characterToDisplay | async)?.role}}</h4>
+  <p>Common saying: "{{(characterToDisplay | async)?.bio}}"</p>
 </div>
