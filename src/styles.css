@@ -40,4 +40,5 @@ strong {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-family: 'Exo 2', sans-serif;
 }
