@@ -1,4 +1,4 @@
-<div *ngFor="let character of characters | async" (click)="seeCharDetail(character)" class="panel">
+<div *ngFor="let character of characters | async" (click)="seeCharDetail(character)">
   <div [class]="getRole(character)">
     <h3><strong>{{character.name}}</strong></h3>
   </div>

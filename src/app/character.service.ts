@@ -19,7 +19,7 @@ export class CharacterService {
   }
 
   getCharacterById(characterId: string) {
-  return this.database.object('character/' + characterId);
+  return this.database.object('characters/' + characterId);
    }
 
 }

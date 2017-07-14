@@ -31,7 +31,7 @@ export class CharacterListComponent implements OnInit {
       return "bg-info";
     }
     else if (character.role === "Defense"){
-      return "bg-Warning";
+      return "bg-warning";
     }
     else {
       return "bg-danger";

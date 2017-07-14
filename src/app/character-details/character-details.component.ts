@@ -5,9 +5,9 @@ import { Character } from '../character.model';
 import { CharacterService } from '../character.service';
 
 @Component({
-  selector: 'app-character-detail',
-  templateUrl: './character-detail.component.html',
-  styleUrls: ['./character-detail.component.css'],
+  selector: 'app-character-details',
+  templateUrl: './character-details.component.html',
+  styleUrls: ['./character-details.component.css'],
   providers: [CharacterService]
 })
 
@@ -15,16 +15,17 @@ export class CharacterDetailsComponent implements OnInit {
   characterId: string;
   characterToDisplay;
 
-  constructor(private route: ActivatedRoute,
+  constructor(
+    private route: ActivatedRoute,
     private location: Location,
-    private characterService: CharacterService
-  ) {}
+    private characterService: CharacterService) {}
 
   ngOnInit() {
       this.route.params.forEach((urlParameters) => {
       this.characterId = urlParameters['id'];
       });
     this.characterToDisplay = this.characterService.getCharacterById(this.characterId);
+    console.log(this.characterToDisplay.name)
   }
 
 }
