@@ -22,4 +22,16 @@ export class CharacterService {
   return this.database.object('characters/' + characterId);
    }
 
+  updateCharacter(localUpdatedCharacter){
+    var characterEntryInFirebase = this.getCharacterById(localUpdatedCharacter.$key);
+    characterEntryInFirebase.update({name: localUpdatedCharacter.name,
+                                    role: localUpdatedCharacter.role,
+                                    bio: localUpdatedCharacter.bio});
+  }
+
+  deleteCharacter(localCharacterToDelete){
+    var characterEntryInFirebase = this.getCharacterById(localCharacterToDelete.$key);
+    characterEntryInFirebase.remove();
+  }
+
 }

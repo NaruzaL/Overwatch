@@ -1,0 +1,31 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Add a new hero</h3>
+  </div>
+  <div class="panel-body">
+    <div>
+      <div>
+        <label>Name:</label>
+        <br>
+        <input #newName>
+      </div>
+
+      <div>
+        <label>Role:</label>
+        <br>
+        <input #newRole>
+      </div>
+
+      <div>
+        <label>Common saying:</label>
+        <br>
+        <textarea #newBio></textarea>
+      </div>
+       <button (click)="submitForm(newName.value, newRole.value, newBio.value); newName.value=''; newRole.value=''; newBio.value=''">Add</button>
+    </div>
+  </div>
+</div>
+
+<div>
+  <app-character-list></app-character-list>
+</div>

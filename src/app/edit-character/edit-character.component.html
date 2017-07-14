@@ -1,0 +1,16 @@
+<h4>Edit Character</h4>
+
+<label>New Character Name:</label>
+<input [(ngModel)]="selectedCharacter.name">
+<br>
+
+<label>New Character Role:</label>
+<input [(ngModel)]="selectedCharacter.role">
+<br>
+
+<label>New Character saying:</label>
+<input [(ngModel)]="selectedCharacter.bio">
+
+<button (click)="beginUpdatingCharacter(selectedCharacter)">Update</button>
+<hr>
+<button (click)="beginDeletingCharacter(selectedCharacter)">Delete</button>
