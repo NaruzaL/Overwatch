@@ -1,0 +1,127 @@
+{ "characters": [{
+    "name": "Doomfist",
+    "role": "Offense",
+    "bio": "Only through conflict do we evolve.",
+    "id": "1"
+      }, {
+    "name": "Genji",
+    "role": "Offense",
+    "bio": "Even if I sacrifice my body, I will never sacrifice my honor.",
+    "id": "2"
+    }, {
+    "name": "McCree",
+    "role": "Offense",
+    "bio": "Justice ain't gonna dispense itself.",
+    "id": "3"
+    }, {
+    "name": "Pharah",
+    "role": "Offense",
+    "bio": "I will protect the innocent.",
+    "id": "4"
+      }, {
+    "name": "Reaper",
+    "role": "Offense",
+    "bio": "Death walks among you.",
+    "id": "4"
+    }, {
+    "name": "Soldier: 76",
+    "role": "Offense",
+    "bio": "We're all soldiers now.",
+    "id": "5"
+      }, {
+    "name": "Sombra",
+    "role": "Offense",
+    "bio": "Everything can be hacked… and everyone.",
+    "id": "6"
+    }, {
+    "name": "Tracer",
+    "role": "Offense",
+    "bio": "Cheers, love! The cavalry’s here!",
+    "id": "7"
+      }, {
+    "name": "Bastion",
+    "role": "Defense",
+    "bio": "Bleep bloop!",
+    "id": "8"
+      }, {
+    "name": "Hanzo",
+    "role": "Defense",
+    "bio": "With every death comes honor. With honor, redemption.",
+    "id": "9"
+      }, {
+    "name": "Junkrat",
+    "role": "Defense",
+    "bio": "It's a perfect day for some mayhem.",
+    "id": "10"
+      }, {
+    "name": "Mei",
+    "role": "Defense",
+    "bio": "Our world is worth fighting for.",
+    "id": "11"
+      }, {
+    "name": "Torbjorn",
+    "role": "Defense",
+    "bio": "Build ‘em up, break ‘em down.”",
+    "id": "12"
+      }, {
+    "name": "Widowmaker",
+    "role": "Defense",
+    "bio": "One shot, one kill.",
+    "id": "13"
+      }, {
+    "name": "D.Va",
+    "role": "Tank",
+    "bio": "I play to win.",
+    "id": "14"
+      }, {
+    "name": "Orisa",
+    "role": "Tank",
+    "bio": "Your safety is my primary concern.",
+    "id": "15"
+      }, {
+    "name": "Reinhardt",
+    "role": "Tank",
+    "bio": "Justice will be done.",
+    "id": "16"
+    }, {
+    "name": "Roadhog",
+    "role": "Tank",
+    "bio": "I'm a one-man apocalypse.",
+    "id": "17"
+    }, {
+    "name": "Winston",
+    "role": "Tank",
+    "bio": "Imagination is the essence of discovery.",
+    "id": "18"
+    }, {
+    "name": "Zarya",
+    "role": "Tank",
+    "bio": "Together we are strong.",
+    "id": "19"
+    }, {
+    "name": "Ana",
+    "role": "Support",
+    "bio": "Everyone must find their cause.",
+    "id": "20"
+    }, {
+    "name": "Lucio",
+    "role": "Support",
+    "bio": "Come on, let’s bring it together!",
+    "id": "21"
+    }, {
+    "name": "Mercy",
+    "role": "Support",
+    "bio": "Heroes never die.",
+    "id": "22"
+    }, {
+    "name": "Symmetra",
+    "role": "Support",
+    "bio": "The true enemy of humanity is disorder.",
+    "id": "23"
+    }, {
+    "name": "Zenyatta",
+    "role": "Support",
+    "bio": "True self is without form.",
+    "id": "24"
+  }]
+}
