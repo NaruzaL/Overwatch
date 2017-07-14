@@ -1,28 +1,47 @@
 # Overwatch
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
+#### Week 3 Javascript independent project, 07.14.17
 
-## Development server
+#### **By Pete Lazuran**
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Description
 
-## Code scaffolding
+This web application will allow a user to create, view, edit and delete a list of characters from the game Overwatch.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
+## Setup/Installation Requirements
 
-## Build
+To run this project:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+1. if you do not have Bower installed already, in your terminal enter  "npm install bower -g"
+2. if you do not have TyepScript installed already, in your terminal enter  "npm install typescript -g"
+3. for angular "npm install -g @angular/cli@1.0.0"
+4. for angularFire/firebase "npm install angularfire2@4.0.0-rc.0 firebase --save"
+3. Clone this repository to your desktop.
+4. Run {$ npm install} and {$ bower install} in your terminal to gather required packages.
+5. Run {$ ng serve} to view the project in your web browser at localhost:4200 .
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Support and contact details
 
-## Running end-to-end tests
+If you have any issues or have questions, ideas, concerns, or contributions please contact me through through Github.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
+## Known Bugs
 
-## Further help
+None
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Technologies Used
+
+* Javascript
+* Typescript
+* Angular 2
+* AngularFire
+* Firebase
+* JSON
+* HTML
+* CSS
+* Bootstrap
+
+### License
+This software is licensed under the MIT license.
+
+Copyright (c) 2017 **Pete Lazuran**
