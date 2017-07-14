@@ -11,6 +11,7 @@ body {
 img {
   margin-left: 20%;
 }
+
 .aboutGif {
   margin-left:18%;
 }
@@ -32,8 +33,9 @@ p, h2, h4 {
 }
 
 strong {
-  border: 1px solid silver;
+  border: 5px solid grey;
   border-radius: 10px;
+  padding: 10px;
   list-style: none;
   display: flex;
   justify-content: space-between;

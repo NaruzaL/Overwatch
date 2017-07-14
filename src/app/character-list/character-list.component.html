@@ -1,5 +1,14 @@
 <div id="charList">
-  <div *ngFor="let character of characters | async">
+  <div class = "selectForm">
+  <select (change)="onChange($event.target.value)">
+    <option value="allCharacters" selected="selected">All Characters</option>
+    <option value="offense">Offensive Characters</option>
+    <option value="defense">Defensive Characters</option>
+    <option value="tank">Tank Characters</option>
+    <option value="support">Support Characters</option>
+  </select>
+  </div>
+  <div *ngFor="let character of characters | async | role: filterByRole ">
     <div [class]="getRole(character)">
       <h3 (click)="seeCharDetail(character)"><strong>{{character.name}}</strong></h3>
       <div *ngIf="currentRoute === '/admin'">

@@ -13,6 +13,7 @@ import { FirebaseListObservable } from 'angularfire2/database';
 export class CharacterListComponent implements OnInit {
     characters: FirebaseListObservable<any[]>;
     currentRoute: string = this.router.url;
+    filterByRole: string = "allCharacters";
 
   constructor(private router: Router, private characterService: CharacterService) { }
 
@@ -24,6 +25,13 @@ export class CharacterListComponent implements OnInit {
   this.characters.push(newCharacter);
   }
 
+  onChange(optionFromMenu) {
+    this.filterByRole = optionFromMenu;
+  }
+
+  seeCharDetail(clickedCharacter) {
+    this.router.navigate(['character', clickedCharacter.$key]);
+  }
   getRole(character: Character) {
     if (character.role === "Support") {
       return "bg-success";
@@ -37,10 +45,6 @@ export class CharacterListComponent implements OnInit {
     else {
       return "bg-danger";
     }
-  }
-
-  seeCharDetail(clickedCharacter) {
-    this.router.navigate(['character', clickedCharacter.$key]);
   }
 
 }
