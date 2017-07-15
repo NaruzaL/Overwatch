@@ -2,6 +2,20 @@ body {
   background-image: url("/src/background.jpg");
 }
 
+#homeDir {
+  color:White;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+               0px 8px 13px rgba(0,0,0,0.1),
+               0px 18px 23px rgba(0,0,0,0.1);
+}
+#heroes {
+  display: flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
 #charPage {
   display: flex;
   flex-direction: column;
@@ -19,7 +33,7 @@ img {
 p, h2, h4 {
   background-color: silver;
   border: 1px solid silver;
-  border-radius: 15px;
+  border-radius: 10px;
   padding: 9px;
   font-family: 'Exo 2', sans-serif;
   font-size: 20px;
@@ -30,12 +44,13 @@ p, h2, h4 {
   display: flex;
   flex-direction:column;
   align-items: center;
+
 }
 
 strong {
-  border: 5px solid grey;
-  border-radius: 10px;
-  padding: 10px;
+  border: 2px solid grey;
+  border-radius: 5px;
+  padding: 4px;
   list-style: none;
   display: flex;
   justify-content: space-between;

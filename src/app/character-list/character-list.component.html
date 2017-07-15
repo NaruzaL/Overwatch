@@ -9,14 +9,17 @@
     <option value="support">Support Characters</option>
   </select>
   </div>
-  <div *ngFor="let character of characters | async | role: filterByRole ">
-    <div [class]="getRole(character)">
-      <h3 (click)="seeCharDetail(character)"><strong>{{character.name}}</strong></h3>
-      <div *ngIf="currentRoute === '/admin'">
-        <h5>Role: {{character.role}} </h5>
-        <h5>Saying: "{{character.bio}}"</h5>
-        <hr>
-        <app-edit-character [selectedCharacter]="character"></app-edit-character>
+  <h1 id="homeDir">Click a character to see their details</h1>
+  <div id="heroes">
+    <div *ngFor="let character of characters | async | role: filterByRole ">
+      <div [class]="getRole(character)">
+          <h3 (click)="seeCharDetail(character)"><strong>{{character.name}}</strong></h3>
+        <div *ngIf="currentRoute === '/admin'">
+          <h5>Role: {{character.role}} </h5>
+          <h5>Saying: "{{character.bio}}"</h5>
+          <hr>
+          <app-edit-character [selectedCharacter]="character"></app-edit-character>
+        </div>
       </div>
     </div>
   </div>
